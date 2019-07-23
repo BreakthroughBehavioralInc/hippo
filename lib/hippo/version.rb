@@ -2,7 +2,7 @@ module Hippo
   module VERSION
     MAJOR = 0
     MINOR = 5
-    PATCH = 6
+    PATCH = 7
     BUILD = 'edge'
 
     STRING = [MAJOR, MINOR, PATCH, BUILD].compact.join('.')

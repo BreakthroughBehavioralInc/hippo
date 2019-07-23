@@ -148,7 +148,7 @@ class TestSegmentsBase < MiniTest::Unit::TestCase
     assert_equal 2, seg.IntegerField
 
     seg.DecimalField = '123.45'
-    assert_equal BigDecimal.new('123.45'), seg.DecimalField
+    assert_equal BigDecimal('123.45'), seg.DecimalField
 
     assert_equal 'TSS*******20120121*231101*2*123.45~', seg.to_s
   end
