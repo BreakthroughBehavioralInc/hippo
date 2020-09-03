@@ -3,6 +3,16 @@ module Hippo::TransactionSets
 
     class L2110C < Hippo::TransactionSets::Base
       loop_name 'L2110C'    #Subscriber Eligibility or Benefit Information
+      
+      #Subscriber Eligibility or Benefit Additional Inquiry Information
+      segment Hippo::Segments::III,
+                :name           => 'Subscriber Eligibility or Benefit Additional Inquiry Information',
+                :minimum        => 0,
+                :maximum        => 1,
+                :position       => 1390,
+                :identified_by => {
+                  'III01' => 'ZZ'
+                }
 
       #Subscriber Eligibility or Benefit Information
       segment Hippo::Segments::EB,
